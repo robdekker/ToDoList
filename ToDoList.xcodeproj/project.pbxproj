@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A463CABF1FC5C04900D8A813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463CABE1FC5C04900D8A813 /* AppDelegate.swift */; };
-		A463CAC11FC5C04900D8A813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463CAC01FC5C04900D8A813 /* ViewController.swift */; };
 		A463CAC41FC5C04900D8A813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463CAC21FC5C04900D8A813 /* Main.storyboard */; };
 		A463CAC61FC5C04900D8A813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A463CAC51FC5C04900D8A813 /* Assets.xcassets */; };
 		A463CAC91FC5C04900D8A813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463CAC71FC5C04900D8A813 /* LaunchScreen.storyboard */; };
 		A463CAD41FC5C04A00D8A813 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463CAD31FC5C04A00D8A813 /* ToDoListTests.swift */; };
+		A4C57B031FC62A6500F4D9BD /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C57B021FC62A6400F4D9BD /* ToDoCell.swift */; };
+		A4FD9E1E1FC5D79C00A2F658 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD9E1D1FC5D79C00A2F658 /* ToDo.swift */; };
+		A4FD9E201FC5D89E00A2F658 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD9E1F1FC5D89E00A2F658 /* ToDoTableViewController.swift */; };
+		A4FD9E221FC5F99600A2F658 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD9E211FC5F99600A2F658 /* ToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		A463CABB1FC5C04900D8A813 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A463CABE1FC5C04900D8A813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A463CAC01FC5C04900D8A813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A463CAC31FC5C04900D8A813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A463CAC51FC5C04900D8A813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A463CAC81FC5C04900D8A813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		A463CACF1FC5C04A00D8A813 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A463CAD31FC5C04A00D8A813 /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
 		A463CAD51FC5C04A00D8A813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C57B021FC62A6400F4D9BD /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		A4FD9E1D1FC5D79C00A2F658 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		A4FD9E1F1FC5D89E00A2F658 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		A4FD9E211FC5F99600A2F658 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				A463CABE1FC5C04900D8A813 /* AppDelegate.swift */,
-				A463CAC01FC5C04900D8A813 /* ViewController.swift */,
+				A4FD9E1D1FC5D79C00A2F658 /* ToDo.swift */,
+				A4FD9E1F1FC5D89E00A2F658 /* ToDoTableViewController.swift */,
+				A4C57B021FC62A6400F4D9BD /* ToDoCell.swift */,
+				A4FD9E211FC5F99600A2F658 /* ToDoViewController.swift */,
 				A463CAC21FC5C04900D8A813 /* Main.storyboard */,
 				A463CAC51FC5C04900D8A813 /* Assets.xcassets */,
 				A463CAC71FC5C04900D8A813 /* LaunchScreen.storyboard */,
@@ -199,8 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A463CAC11FC5C04900D8A813 /* ViewController.swift in Sources */,
+				A4FD9E221FC5F99600A2F658 /* ToDoViewController.swift in Sources */,
+				A4FD9E201FC5D89E00A2F658 /* ToDoTableViewController.swift in Sources */,
 				A463CABF1FC5C04900D8A813 /* AppDelegate.swift in Sources */,
+				A4FD9E1E1FC5D79C00A2F658 /* ToDo.swift in Sources */,
+				A4C57B031FC62A6500F4D9BD /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +368,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8D27KM92G;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uniek.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,11 +384,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8D27KM92G;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uniek.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
